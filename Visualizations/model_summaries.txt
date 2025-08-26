@@ -1,0 +1,141 @@
+Summary of Full Model:
+
+Call:
+glm(formula = HadHeartAttack ~ ., family = binomial, data = df)
+
+Coefficients:
+                                                     Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                                        -5.2605074  0.2730388 -19.267  < 2e-16 ***
+PhysicalHealthDays                                 -0.0026564  0.0012360  -2.149 0.031623 *  
+MentalHealthDays                                    0.0014334  0.0014307   1.002 0.316404    
+SleepHours                                         -0.0269294  0.0063052  -4.271 1.95e-05 ***
+HeightInMeters                                     -0.3838871  0.1377190  -2.787 0.005312 ** 
+BMI                                                 0.0001133  0.0016938   0.067 0.946645    
+GeneralHealth                                      -0.2724973  0.0130261 -20.919  < 2e-16 ***
+RemovedTeeth                                        0.1428049  0.0114327  12.491  < 2e-16 ***
+AgeCategory                                         0.1666862  0.0055501  30.033  < 2e-16 ***
+SmokerStatus_ord                                    0.1664624  0.0118461  14.052  < 2e-16 ***
+ECigaretteUsage_ord                                 0.0112402  0.0197115   0.570 0.568518    
+AlcoholDrinkers                                    -0.1786339  0.0222226  -8.038 9.10e-16 ***
+BlindOrVisionDifficulty                             0.1248692  0.0369118   3.383 0.000717 ***
+ChestScan                                           0.5667618  0.0243844  23.243  < 2e-16 ***
+CovidPosNo                                          0.2941106  0.0753344   3.904 9.46e-05 ***
+CovidPosYes                                         0.3267358  0.0771566   4.235 2.29e-05 ***
+DeafOrHardOfHearing                                 0.0198172  0.0287496   0.689 0.490632    
+DifficultyConcentrating                             0.0522281  0.0334128   1.563 0.118025    
+DifficultyDressingBathing                          -0.0826097  0.0446809  -1.849 0.064475 .  
+DifficultyErrands                                   0.0652405  0.0369769   1.764 0.077672 .  
+DifficultyWalking                                   0.0706575  0.0285065   2.479 0.013188 *  
+FluVaxLast12                                       -0.1516526  0.0235508  -6.439 1.20e-10 ***
+HIVTesting                                          0.0840563  0.0244141   3.443 0.000575 ***
+HadAngina                                           2.4211356  0.0229995 105.269  < 2e-16 ***
+HadArthritis                                        0.0365679  0.0228766   1.598 0.109936    
+HadAsthma                                          -0.0030645  0.0293921  -0.104 0.916960    
+HadCOPD                                             0.0292071  0.0303145   0.963 0.335312    
+HadDepressiveDisorder                               0.0148911  0.0294641   0.505 0.613280    
+HadDiabetesOther                                    0.0996578  0.0580720   1.716 0.086143 .  
+HadDiabetesYes                                      0.3223571  0.0247194  13.041  < 2e-16 ***
+HadKidneyDisease                                    0.0589362  0.0342968   1.718 0.085720 .  
+HadSkinCancer                                      -0.1164408  0.0318618  -3.655 0.000258 ***
+HadStroke                                           0.8442035  0.0312672  27.000  < 2e-16 ***
+HighRiskLastYear                                    0.0464695  0.0658653   0.706 0.480485    
+LastCheckupTime                                     0.1783181  0.0243418   7.326 2.38e-13 ***
+PhysicalActivities                                 -0.0482321  0.0241188  -2.000 0.045525 *  
+PneumoVaxEver                                       0.0625982  0.0251861   2.485 0.012940 *  
+RaceEthnicityCategoryHispanic                       0.2528245  0.0593945   4.257 2.07e-05 ***
+RaceEthnicityCategoryMultiracial,_Non-Hispanic      0.4074060  0.0792352   5.142 2.72e-07 ***
+RaceEthnicityCategoryOther_race_only,_Non-Hispanic  0.3318344  0.0653453   5.078 3.81e-07 ***
+RaceEthnicityCategoryWhite_only,_Non-Hispanic       0.1772527  0.0427523   4.146 3.38e-05 ***
+RegionEast_South_Central                           -0.1041366  0.0587662  -1.772 0.076386 .  
+RegionMiddle_Atlantic                              -0.1128259  0.0532471  -2.119 0.034098 *  
+RegionMountain_Region                               0.0845251  0.0422128   2.002 0.045246 *  
+RegionNew_England                                   0.1226050  0.0426405   2.875 0.004036 ** 
+RegionPacific_Region                               -0.0452931  0.0435983  -1.039 0.298863    
+RegionSouth_Atlantic                               -0.0460234  0.0384992  -1.195 0.231917    
+RegionTerritories                                  -0.1381127  0.0818674  -1.687 0.091598 .  
+RegionWest_North_Central                            0.0243862  0.0400113   0.609 0.542204    
+RegionWest_South_Central                            0.0123732  0.0482716   0.256 0.797700    
+Sex                                                 0.6987097  0.0304628  22.937  < 2e-16 ***
+TetanusLast10Tdap                                  -0.0405572  0.0145668  -2.784 0.005365 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 104249  on 246021  degrees of freedom
+Residual deviance:  71460  on 245970  degrees of freedom
+AIC: 71564
+
+Number of Fisher Scoring iterations: 7
+
+
+Summary of Stepwise Model:
+
+Call:
+glm(formula = HadHeartAttack ~ PhysicalHealthDays + SleepHours + 
+    HeightInMeters + GeneralHealth + RemovedTeeth + AgeCategory + 
+    SmokerStatus_ord + AlcoholDrinkers + BlindOrVisionDifficulty + 
+    ChestScan + CovidPos + DifficultyConcentrating + DifficultyDressingBathing + 
+    DifficultyErrands + DifficultyWalking + FluVaxLast12 + HIVTesting + 
+    HadAngina + HadArthritis + HadDiabetes + HadKidneyDisease + 
+    HadSkinCancer + HadStroke + LastCheckupTime + PhysicalActivities + 
+    PneumoVaxEver + RaceEthnicityCategory + Region + Sex + TetanusLast10Tdap, 
+    family = binomial, data = df)
+
+Coefficients:
+                                                    Estimate Std. Error z value Pr(>|z|)    
+(Intercept)                                        -5.215920   0.260239 -20.043  < 2e-16 ***
+PhysicalHealthDays                                 -0.002355   0.001214  -1.941 0.052308 .  
+SleepHours                                         -0.027407   0.006296  -4.353 1.34e-05 ***
+HeightInMeters                                     -0.389007   0.137449  -2.830 0.004652 ** 
+GeneralHealth                                      -0.275149   0.012921 -21.295  < 2e-16 ***
+RemovedTeeth                                        0.144780   0.011357  12.748  < 2e-16 ***
+AgeCategory                                         0.164939   0.005193  31.764  < 2e-16 ***
+SmokerStatus_ord                                    0.171005   0.011288  15.149  < 2e-16 ***
+AlcoholDrinkers                                    -0.177496   0.022196  -7.997 1.28e-15 ***
+BlindOrVisionDifficulty                             0.128920   0.036739   3.509 0.000450 ***
+ChestScan                                           0.568965   0.024306  23.408  < 2e-16 ***
+CovidPosNo                                          0.295526   0.075340   3.923 8.76e-05 ***
+CovidPosYes                                         0.328800   0.077152   4.262 2.03e-05 ***
+DifficultyConcentrating                             0.069991   0.031510   2.221 0.026338 *  
+DifficultyDressingBathing                          -0.080620   0.044618  -1.807 0.070782 .  
+DifficultyErrands                                   0.068857   0.036901   1.866 0.062041 .  
+DifficultyWalking                                   0.072900   0.028250   2.581 0.009864 ** 
+FluVaxLast12                                       -0.151733   0.023535  -6.447 1.14e-10 ***
+HIVTesting                                          0.088545   0.024251   3.651 0.000261 ***
+HadAngina                                           2.423097   0.022950 105.581  < 2e-16 ***
+HadArthritis                                        0.039267   0.022660   1.733 0.083127 .  
+HadDiabetesOther                                    0.100408   0.057956   1.733 0.083184 .  
+HadDiabetesYes                                      0.321763   0.024303  13.240  < 2e-16 ***
+HadKidneyDisease                                    0.059158   0.034284   1.726 0.084431 .  
+HadSkinCancer                                      -0.115139   0.031827  -3.618 0.000297 ***
+HadStroke                                           0.845085   0.031242  27.050  < 2e-16 ***
+LastCheckupTime                                     0.177562   0.024309   7.304 2.79e-13 ***
+PhysicalActivities                                 -0.049667   0.024014  -2.068 0.038614 *  
+PneumoVaxEver                                       0.065583   0.025041   2.619 0.008820 ** 
+RaceEthnicityCategoryHispanic                       0.254339   0.059323   4.287 1.81e-05 ***
+RaceEthnicityCategoryMultiracial,_Non-Hispanic      0.413208   0.079140   5.221 1.78e-07 ***
+RaceEthnicityCategoryOther_race_only,_Non-Hispanic  0.334287   0.065179   5.129 2.92e-07 ***
+RaceEthnicityCategoryWhite_only,_Non-Hispanic       0.182427   0.042570   4.285 1.82e-05 ***
+RegionEast_South_Central                           -0.104206   0.058734  -1.774 0.076030 .  
+RegionMiddle_Atlantic                              -0.113538   0.053219  -2.133 0.032892 *  
+RegionMountain_Region                               0.084524   0.042177   2.004 0.045067 *  
+RegionNew_England                                   0.122127   0.042608   2.866 0.004153 ** 
+RegionPacific_Region                               -0.045376   0.043554  -1.042 0.297481    
+RegionSouth_Atlantic                               -0.046535   0.038480  -1.209 0.226540    
+RegionTerritories                                  -0.139429   0.081789  -1.705 0.088241 .  
+RegionWest_North_Central                            0.022680   0.039976   0.567 0.570478    
+RegionWest_South_Central                            0.012927   0.048234   0.268 0.788700    
+Sex                                                 0.697695   0.030090  23.187  < 2e-16 ***
+TetanusLast10Tdap                                  -0.040660   0.014557  -2.793 0.005220 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 104249  on 246021  degrees of freedom
+Residual deviance:  71464  on 245978  degrees of freedom
+AIC: 71552
+
+Number of Fisher Scoring iterations: 7
+
