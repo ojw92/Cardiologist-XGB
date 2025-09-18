@@ -1,5 +1,12 @@
+# Specific files with specific path
+/Data/test.ipynb
+/Code/spark_etl.ipynb
+# All files with this name in all folders of this repo
+test.ipynb
+
 # Custom stuff
 *.csv
+*.xlsx
 .DS_Store
 
 # History files
